@@ -100,17 +100,20 @@
             android:id="@+id/tv_temconta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_temconta_register" />
+            android:text="@string/txt_temconta_register"
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/tv_inciar_sessao_registar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_inicie_sessao_register"
             android:layout_marginStart="3dp"
-            android:textColor="@color/color_eventlink"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:textSize="17sp"
+            android:text="@string/txt_inicie_sessao_register"
+            android:onClick="onClickLogin"
+            android:textColor="@color/color_eventlink" />
 
     </LinearLayout>
 

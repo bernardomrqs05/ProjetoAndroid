@@ -87,7 +87,8 @@
             android:textSize="17sp"
             android:textColor="@color/color_eventlink"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:onClick="onClickRegister"/>
 
     </LinearLayout>
 

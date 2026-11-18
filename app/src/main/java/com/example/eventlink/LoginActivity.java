@@ -47,6 +47,11 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
+    public void onClickRegister(View view) {
+        Intent intent = new Intent(this,RegisterActivity.class);
+        startActivity(intent);
+    }
+
     public boolean isEmailValido(String email) {
         if (email == null)
             return false;
