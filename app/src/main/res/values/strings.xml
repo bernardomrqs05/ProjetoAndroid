@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EventLink</string>
+    <string name="txt_eventlink">EventLink</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="btn_entrar_login">Entrar</string>
+    <string name="txt_ainda_nao_tem_conta_login">Ainda não tem conta?</string>
+    <string name="txt_registe_login">Registe-se!</string>
+    <string name="txt_nome_register">Nome</string>
+    <string name="txt_nome_register_preencher">Name</string>
+    <string name="txt_confirmar_password">Confirmar Password</string>
+    <string name="txt_temconta_register">Já tem conta?</string>
+    <string name="txt_inicie_sessao_register">Inicie Sessão</string>
+</resources>

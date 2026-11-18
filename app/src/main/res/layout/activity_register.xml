@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tv_eventlink_register"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:fontFamily="sans-serif"
+        android:text="@string/txt_eventlink"
+        android:textAlignment="center"
+        android:textColor="@color/color_eventlink"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:textSize="20sp"
+        android:text="@string/txt_email" />
+
+    <EditText
+        android:id="@+id/tv_email_register_preencher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_nome_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:textSize="20sp"
+        android:text="@string/txt_nome_register" />
+
+    <EditText
+        android:id="@+id/tv_nome_register_preencher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tv_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:textSize="20sp"
+        android:text="@string/txt_password" />
+
+    <EditText
+        android:id="@+id/tv_password_register_preencher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_confirmar_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:textSize="20sp"
+        android:text="@string/txt_confirmar_password" />
+
+    <EditText
+        android:id="@+id/tv_confirmar_password_register_preencher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_temconta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_temconta_register" />
+
+        <TextView
+            android:id="@+id/tv_inciar_sessao_registar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_inicie_sessao_register"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/color_eventlink"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:textSize="20sp"
+        android:ems="15"
+        app:backgroundTint="@color/color_eventlink"
+        android:text="@string/btn_entrar_login" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"/>
+
+
+</LinearLayout>

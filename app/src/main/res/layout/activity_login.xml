@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.eventlink.LoginActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tv_eventlink"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.025"
+        android:fontFamily="sans-serif"
+        android:text="@string/txt_eventlink"
+        android:textAlignment="center"
+        android:textColor="@color/color_eventlink"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_eventlink"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        app:srcCompat="@drawable/eventlink" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.020"
+        android:textSize="20sp"
+        android:text="@string/txt_email" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.020"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.020"
+        android:textSize="20sp"
+        android:text="@string/txt_password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.020"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.025"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_semconta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="@string/txt_ainda_nao_tem_conta_login" />
+
+        <TextView
+            android:id="@+id/tv_registe_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_registe_login"
+            android:layout_marginStart="3dp"
+            android:textSize="17sp"
+            android:textColor="@color/color_eventlink"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"
+        android:textSize="20sp"
+        android:ems="15"
+        app:backgroundTint="@color/color_eventlink"
+        android:text="@string/btn_entrar_login"
+        android:onClick="onClickLogin"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.03"/>
+
+
+</LinearLayout>
