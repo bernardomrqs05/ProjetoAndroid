@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.EventLink" parent="Base.Theme.EventLink" />
+
+    <style name="Theme.EventLink.WithActionBar"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/color_eventlink</item>
+    </style>
 </resources>

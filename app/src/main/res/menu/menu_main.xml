@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_principal"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navEspacos"
+            android:title="Espaços"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/navPedidos"
+            android:title="Pedidos"
+            android:icon="@drawable/ic_pedidos"/>
+    </group>
+
+    <group
+        android:id="@+id/group_secundario"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navFaq"
+            android:title="Ajuda / FaQ"
+            android:icon="@drawable/ic_faq"/>
+    </group>
+
+</menu>

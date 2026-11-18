@@ -7,11 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:fitsSystemWindows="true"
     tools:context="com.example.eventlink.LoginActivity">
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="80dp" />
+        android:layout_height="20dp" />
 
     <TextView
         android:id="@+id/tv_eventlink"
@@ -100,6 +101,7 @@
         android:textSize="20sp"
         android:ems="15"
         app:backgroundTint="@color/color_eventlink"
+        android:textColor="@color/white"
         android:text="@string/btn_entrar_login"
         android:onClick="onClickLogin"/>
 

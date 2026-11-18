@@ -11,4 +11,6 @@
     <string name="txt_confirmar_password">Confirmar Password</string>
     <string name="txt_temconta_register">Já tem conta?</string>
     <string name="txt_inicie_sessao_register">Inicie Sessão</string>
+    <string name="menu_abrir">Abrir menu de navegação</string>
+    <string name="menu_fechar">Fechar menu de navegação</string>
 </resources>

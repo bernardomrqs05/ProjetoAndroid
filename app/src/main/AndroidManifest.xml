@@ -18,6 +18,8 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
+            android:label="Login"
+            android:theme="@style/Theme.EventLink.WithActionBar"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +29,12 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="Registar"
+            android:theme="@style/Theme.EventLink.WithActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MenuMainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
