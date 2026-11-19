@@ -8,9 +8,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.eventlink.databinding.ActivityLoginBinding;
 
@@ -24,13 +21,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        //setContentView(R.layout.activity_login);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 
     public void onClickLogin(View view) {
-        String email = binding.etEmail.getText().toString();
+        String email = binding.etEmail.getText().toString().trim();
         String password = binding.etPassword.getText().toString();
         if (!isEmailValido(email)) {
             binding.etEmail.setError("Email invalido");
@@ -41,14 +37,15 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         Toast.makeText(this, "Login efetuado com sucesso", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this,MenuMainActivity.class);
-        intent.putExtra("Email",email);
+        Intent intent = new Intent(this, MenuMainActivity.class);
+        intent.putExtra("Email", email);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
     }
 
     public void onClickRegister(View view) {
-        Intent intent = new Intent(this,RegisterActivity.class);
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 
@@ -63,6 +60,4 @@ public class LoginActivity extends AppCompatActivity {
             return false;
         return password.length() >= PASS_MIN;
     }
-
-
 }
