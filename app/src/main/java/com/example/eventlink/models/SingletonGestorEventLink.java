@@ -1,6 +1,7 @@
 package com.example.eventlink.models;
 
 import com.example.eventlink.R;
+
 import java.util.ArrayList;
 
 public class SingletonGestorEventLink {
@@ -75,6 +76,14 @@ public class SingletonGestorEventLink {
         return new ArrayList<>(locais);
     }
 
+    public ArrayList<String> getServicosExtraFicticios() {
+        ArrayList<String> extras = new ArrayList<>();
+        extras.add("Catering Completo");
+        extras.add("Fotografia & Vídeo");
+        extras.add("Animação / DJ");
+        extras.add("Decoração Temática");
+        return extras;
+    }
     public Local getLocal(int id) {
         for (Local l : locais) {
             if (l.getId() == id) {

@@ -12,6 +12,7 @@ public class Local implements Serializable {
     private String codigoPostal;
     private int capacidadeTotal;
     private double precoAluguerBase;
+    private double avaliacao;
 
     public Local(int id, String nome, String descricao, int imagemResId, String morada,
                  String cidade, String codigoPostal, int capacidadeTotal, double precoAluguerBase) {
@@ -52,4 +53,7 @@ public class Local implements Serializable {
 
     public double getPrecoAluguerBase() { return precoAluguerBase; }
     public void setPrecoAluguerBase(double precoAluguerBase) { this.precoAluguerBase = precoAluguerBase; }
+    public double getAvaliacao() {
+        return avaliacao;
+    }
 }

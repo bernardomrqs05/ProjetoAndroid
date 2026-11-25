@@ -14,4 +14,8 @@
     <string name="menu_abrir">Abrir menu de navegação</string>
     <string name="menu_fechar">Fechar menu de navegação</string>
     <string name="sugestoes_pag_espaços">Sugestões</string>
+    <string name="descricao_espaço">Descrição do espaço</string>
+    <string name="localizaçao_detalhes">Localização</string>
+    <string name="servicos_extras">Serviços Extra</string>
+    <string name="reservar_detalhes">Reservar</string>
 </resources>

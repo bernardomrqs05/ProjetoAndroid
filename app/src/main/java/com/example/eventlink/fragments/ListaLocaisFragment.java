@@ -1,5 +1,6 @@
 package com.example.eventlink.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.eventlink.DetalhesLocalActivity;
+import com.example.eventlink.R;
 import com.example.eventlink.adapters.ListaLocaisAdapter;
 import com.example.eventlink.databinding.FragmentListaLocaisBinding;
 import com.example.eventlink.models.Local;
@@ -34,8 +37,9 @@ public class ListaLocaisFragment extends Fragment {
 
         binding.lvLocais.setOnItemClickListener((parent, view, position, id) -> {
             Local localSelecionado = locais.get(position);
-            Toast.makeText(getContext(), "Selecionaste: " + localSelecionado.getNome(), Toast.LENGTH_SHORT).show();
-            // Próximo passo: abrir DetalhesLocalActivity passando localSelecionado.getId()
+            Intent intent = new Intent(getContext(), DetalhesLocalActivity.class);
+            intent.putExtra(DetalhesLocalActivity.EXTRA_ID_LOCAL, localSelecionado.getId());
+            startActivity(intent);
         });
 
         return binding.getRoot();

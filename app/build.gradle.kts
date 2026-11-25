@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.books"
+        applicationId = "com.example.eventlink"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

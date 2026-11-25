@@ -37,6 +37,9 @@
             android:name=".MenuMainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DetalhesLocalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
-
 </manifest>
