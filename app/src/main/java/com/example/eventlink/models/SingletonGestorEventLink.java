@@ -8,6 +8,7 @@ public class SingletonGestorEventLink {
 
     private static SingletonGestorEventLink instance = null;
     private ArrayList<Local> locais;
+    private String ipServidor = "10.0.2.2";
 
     public static synchronized SingletonGestorEventLink getInstance() {
         if (instance == null) {
@@ -84,6 +85,7 @@ public class SingletonGestorEventLink {
         extras.add("Decoração Temática");
         return extras;
     }
+
     public Local getLocal(int id) {
         for (Local l : locais) {
             if (l.getId() == id) {
@@ -91,5 +93,19 @@ public class SingletonGestorEventLink {
             }
         }
         return null;
+    }
+
+    public void setIpServidor(String newIp) {
+        if (newIp != null && !newIp.trim().isEmpty()) {
+            this.ipServidor = newIp.trim();
+        }
+    }
+
+    public String getIpServidor() {
+        return ipServidor;
+    }
+
+    public String getBaseUrlApi() {
+        return "http://" + ipServidor + "/Projeto-web/backend/web/api/";
     }
 }

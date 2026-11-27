@@ -30,8 +30,8 @@
 
         <ImageView
             android:id="@+id/img_eventlink"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="20dp"
             android:scaleType="fitCenter"
@@ -48,10 +48,10 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="teste@teste.pt"/>
+            android:minHeight="48dp"
+            android:text="teste@teste.pt" />
 
         <TextView
             android:id="@+id/tv_password"
@@ -65,10 +65,10 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="1233535123511"/>
+            android:minHeight="48dp"
+            android:text="1233535123511" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,6 +110,18 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             app:backgroundTint="@color/color_eventlink" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfigurarIp"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onClickConfigurarIp"
+            android:text="@string/Ip_servidor_config"
+            android:textColor="@color/color_eventlink"
+            android:textSize="14sp"
+            app:iconTint="@color/color_eventlink" />
 
     </LinearLayout>
 </ScrollView>

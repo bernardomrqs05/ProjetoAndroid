@@ -18,4 +18,6 @@
     <string name="localizaçao_detalhes">Localização</string>
     <string name="servicos_extras">Serviços Extra</string>
     <string name="reservar_detalhes">Reservar</string>
+    <string name="Terminar_sessao">Terminar Sessão</string>
+    <string name="Ip_servidor_config">Configurar IP do Servidor</string>
 </resources>
