@@ -32,8 +32,6 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        // Carregar o IP guardado anteriormente e atualizar o Singleton
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String ipGuardado = prefs.getString(KEY_IP_SERVIDOR, IP_DEFAULT);
         SingletonGestorEventLink.getInstance().setIpServidor(ipGuardado);
@@ -90,7 +88,10 @@ public class LoginActivity extends AppCompatActivity {
                         return;
                     }
 
-                    prefs.edit().putString(KEY_IP_SERVIDOR, novoIp).apply();
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString(KEY_IP_SERVIDOR, novoIp);
+                    editor.apply();
+
                     SingletonGestorEventLink.getInstance().setIpServidor(novoIp);
                     Toast.makeText(this, "Servidor definido: " + novoIp, Toast.LENGTH_SHORT).show();
                 })
